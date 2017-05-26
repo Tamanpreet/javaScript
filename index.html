@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script language="javascript">
+			var score=0;
+			
+			function chk1(ques, ans){
+				if(ques == ans) {
+					score++
+					alert("Your Score is: " + score);
+				}
+				else {
+					score--
+					alert("Wrong! Your score is now " + score);
+				}
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+		<ol>
+			<form>
+				<!--- Q1 -->
+				<li> what is 3 times 7? 
+				<input name="ans1" type="text">
+				<input name="but1" type="button" value="Submit" onclick="chk1(form.ans1.value, '21')">
+				</li>
+				<!--- Q2 -->
+				<li> when will the next yeezy release?
+					<input name="ans2" type="text">
+					<input name="but1" type="button" value="Submit" onclick="chk1(form.ans2.value, '2017')">
+				</li>
+				<!--- Q3 -->
+				<li> how old was steve jobs when he passed?
+					<input name="ans3" type="text">
+					<input name="but1" type="button" value="Submit" onclick="chk1(form.ans3.value, '56')">
+				</li>
+
+				<!--- Q4 -->
+				<li> what is the square root in 9?
+					<input name="ans4" type="text">
+					<input name="but1" type="button" value="Submit" onclick="chk1(form.ans4.value, '3')">
+				</li>
+
+
+				<!--- Q5 -->
+
+				<li> how old is playboi carti?{idk brody picked the question sooo......}
+					<input name="ans5" type="text">
+					<input name="but1" type="button" value="Submit" onclick="chk1(form.ans5.value, '20')">
+				</li>
+
+
+			</form>
+		</ol>		
+		
+	</body>
+</html>
